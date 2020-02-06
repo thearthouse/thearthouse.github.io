@@ -26,8 +26,8 @@
   grid-gap: 20px;
   align-items: center;
   padding-right: 20px;
-    padding-left: 20px;
-  }
+  padding-left: 20px;
+}
 .grid img {
   border: 1px solid #ccc;
   box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
@@ -44,17 +44,26 @@ div {
 	margin: 0 auto;
 	max-width: 300px;
 	text-align:center;
+	grid-column: 1 / span 2;
 }
 #top-ads {
     position: relative;
     overflow: hidden;
 	text-align:center;
-padding-top: 5px;
+	padding-top: 5px;
     padding-bottom: 5px;
-margin: 0 auto;
-max-width: 728px;
-padding-right: 5px;
+	margin: 0 auto;
+	max-width: 728px;
+	padding-right: 5px;
     padding-left: 5px;
+}
+#top-ads img {
+width: 100%;
+height: auto;
+}
+#bottom-ads img {
+width: 100%;
+height: auto;
 }
 .drish {
     position: relative;
@@ -70,14 +79,7 @@ padding-right: 5px;
 width: 100%;
 height: auto;
 }
-#top-ads img {
-width: 100%;
-height: auto;
-}
-#bottom-ads img {
-width: 100%;
-height: auto;
-}
+
 #main {
 width: 605px;
 float: left;
@@ -191,9 +193,11 @@ a {
     </div>
   </div>
 </div>
-<aside class="grid" id="mek"><div id='bottom-ads'>
+<aside class="grid" id="mek">
+<div id='bottom-ads'>
 <iframe data-aa="1322239" src="//ad.a-ads.com/1322239?size=300x250" scrolling="no" style="width:300px; height:250px; border:0px; padding:0; overflow:hidden" allowtransparency="true"></iframe>
-</div></aside>
+</div>
+</aside>
 <div style="clear:both"></div>
 <nav class="navigation pagination"  aria-label="Posts">
 <div class="nav-links" id="navgilink">
