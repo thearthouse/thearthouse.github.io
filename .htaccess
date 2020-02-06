@@ -1,0 +1,6 @@
+ErrorDocument 400 https://thearthouse.tk/
+ErrorDocument 401 https://thearthouse.tk/
+ErrorDocument 403 https://thearthouse.tk/
+ErrorDocument 404 https://thearthouse.tk/
+ErrorDocument 500 https://thearthouse.tk/
+ErrorDocument 503 https://thearthouse.tk/
