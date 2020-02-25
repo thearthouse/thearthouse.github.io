@@ -185,18 +185,7 @@ a {
 </style>
 </head>
 <body>
-<div id='top-ads'>
-<script type="text/javascript">
-	atOptions = {
-		'key' : '4816f97e953f99fa655fdcdd0c4f5c71',
-		'format' : 'iframe',
-		'height' : 90,
-		'width' : 728,
-		'params' : {}
-	};
-	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.madcpms.com/4816f97e953f99fa655fdcdd0c4f5c71/invoke.js"></scr' + 'ipt>');
-</script>
-</div>
+<div id='top-ads'></div>
 <nav class="navigation pagination1" aria-label="Posts">
 <div class="nav-links" id="navgilink1">
 <a class="page-numbers" href="./">Home</a>
@@ -214,18 +203,7 @@ a {
 <!-- AddToAny END -->
 <article id="ma_art" itemscope itemtype="http://schema.org/Article">
 <div id='content-img' class="drish"></div>
-<div id='center-ads'>
-<script type="text/javascript">
-	atOptions = {
-		'key' : 'eb5846df10a6486393481a40d1b87eb4',
-		'format' : 'iframe',
-		'height' : 250,
-		'width' : 300,
-		'params' : {}
-	};
-	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.madcpms.com/eb5846df10a6486393481a40d1b87eb4/invoke.js"></scr' + 'ipt>');
-</script>
-</div>
+<div id='center-ads'></div>
 <div class="drishtx">
 <h1 itemprop="name" class="maintitle" id="main_heading"></h1>
 <p itemprop="articleBody" id="main_articles"></p>
@@ -244,18 +222,7 @@ a {
   </div>
 </div>
 <aside class="grid" id="mek">
-<div id='bottom-ads'>
-<script type="text/javascript">
-	atOptions = {
-		'key' : 'eb5846df10a6486393481a40d1b87eb4',
-		'format' : 'iframe',
-		'height' : 250,
-		'width' : 300,
-		'params' : {}
-	};
-	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.madcpms.com/eb5846df10a6486393481a40d1b87eb4/invoke.js"></scr' + 'ipt>');
-</script>
-</div>
+<div id='bottom-ads'></div>
 </aside>
 <div style="clear:both"></div>
 <nav class="navigation pagination"  aria-label="Posts">
@@ -282,5 +249,68 @@ hs.src = ('//s10.histats.com/js15_as.js');
 })();</script>
 <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4364405&101" alt="stats count" border="0"></a></noscript>
 <!-- Histats.com  END  -->
+<script type="text/javascript">
+function retirn(val) {
+    try {
+        return document.querySelector('#'+val+' > iframe').contentWindow.document.getElementsByTagName("a")[0].innerHTML.length;        
+    } catch (e) {
+        return 0;
+    }
+};
+var d = 0;
+myTimer();
+var myVar = setInterval(myTimer, 2000);
+function myTimer() {
+	if(document.getElementById("top-ads")){
+		if(5 > retirn("top-ads")){
+			document.getElementById("top-ads").innerHTML = "";
+			var script = document.createElement('script');
+			script.type = 'text/javascript';
+			script.text = "atOptions = {'key' : '4816f97e953f99fa655fdcdd0c4f5c71','format' : 'iframe','height' : 90,'width' : 728,'params' : {} 	};";
+			var el = document.getElementById("top-ads");
+			el.appendChild(script);
+			var script = document.createElement('script');
+			script.type = 'text/javascript';
+			script.src = 'https://www.madcpms.com/4816f97e953f99fa655fdcdd0c4f5c71/invoke.js';
+			var el = document.getElementById("top-ads");
+			el.appendChild(script);
+		}
+	}
+	if(document.getElementById("center-ads")){
+		if(5 > retirn("center-ads")){
+			document.getElementById("center-ads").innerHTML = "";
+			var script = document.createElement('script');
+			script.type = 'text/javascript';
+			script.text = "atOptions = {'key' : 'eb5846df10a6486393481a40d1b87eb4','format' : 'iframe','height' : 250,'width' : 300,'params' : {} 	};";
+			var el = document.getElementById("center-ads");
+			el.appendChild(script);
+			var script = document.createElement('script');
+			script.type = 'text/javascript';
+			script.src = 'https://www.madcpms.com/eb5846df10a6486393481a40d1b87eb4/invoke.js';
+			var el = document.getElementById("center-ads");
+			el.appendChild(script);
+		}
+	}
+	if(document.getElementById("bottom-ads")){
+		if(5 > retirn("bottom-ads")){
+			document.getElementById("bottom-ads").innerHTML = "";
+			var script = document.createElement('script');
+			script.type = 'text/javascript';
+			script.text = "atOptions = {'key' : 'eb5846df10a6486393481a40d1b87eb4','format' : 'iframe','height' : 250,'width' : 300,'params' : {} 	};";
+			var el = document.getElementById("bottom-ads");
+			el.appendChild(script);
+			var script = document.createElement('script');
+			script.type = 'text/javascript';
+			script.src = 'https://www.madcpms.com/eb5846df10a6486393481a40d1b87eb4/invoke.js';
+			var el = document.getElementById("bottom-ads");
+			el.appendChild(script);
+		}
+	}
+  d = d+1;
+  if(d > 10){
+  clearInterval(myVar);
+  }
+}
+</script>
 </body>
 </html>
