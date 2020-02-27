@@ -250,19 +250,11 @@ hs.src = ('//s10.histats.com/js15_as.js');
 <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4364405&101" alt="stats count" border="0"></a></noscript>
 <!-- Histats.com  END  -->
 <script type="text/javascript">
-function retirn(val) {
-    try {
-        return document.querySelector('#'+val+' > iframe').contentWindow.document.getElementsByTagName("a")[0].innerHTML.length;        
-    } catch (e) {
-        return 0;
-    }
-};
-var d = 0;
-myTimer();
-var myVar = setInterval(myTimer, 5000);
-function myTimer() {
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+async function Tutor() {
 	if(document.getElementById("top-ads")){
-		if(5 > retirn("top-ads")){
 			document.getElementById("top-ads").innerHTML = "";
 			var script = document.createElement('script');
 			script.type = 'text/javascript';
@@ -274,10 +266,9 @@ function myTimer() {
 			script.src = 'https://www.madcpms.com/4816f97e953f99fa655fdcdd0c4f5c71/invoke.js';
 			var el = document.getElementById("top-ads");
 			el.appendChild(script);
-		}
 	}
+await sleep(3000);
 	if(document.getElementById("center-ads")){
-		if(5 > retirn("center-ads")){
 			document.getElementById("center-ads").innerHTML = "";
 			var script = document.createElement('script');
 			script.type = 'text/javascript';
@@ -289,10 +280,9 @@ function myTimer() {
 			script.src = 'https://www.madcpms.com/1bf289e4ec5b58c423a7597677220242/invoke.js';
 			var el = document.getElementById("center-ads");
 			el.appendChild(script);
-		}
 	}
+await sleep(3000);
 	if(document.getElementById("bottom-ads")){
-		if(5 > retirn("bottom-ads")){
 			document.getElementById("bottom-ads").innerHTML = "";
 			var script = document.createElement('script');
 			script.type = 'text/javascript';
@@ -304,13 +294,8 @@ function myTimer() {
 			script.src = 'https://www.madcpms.com/eb5846df10a6486393481a40d1b87eb4/invoke.js';
 			var el = document.getElementById("bottom-ads");
 			el.appendChild(script);
-		}
-	}
-  d = d+1;
-  if(d > 10){
-  clearInterval(myVar);
-  }
 }
+Tutor();
 </script>
 </body>
 </html>
