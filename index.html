@@ -254,6 +254,7 @@ function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 async function Tutor() {
+await sleep(1000);
 	if(document.getElementById("top-ads")){
 			document.getElementById("top-ads").innerHTML = "";
 			var script = document.createElement('script');
@@ -294,6 +295,7 @@ await sleep(3000);
 			script.src = 'https://www.madcpms.com/eb5846df10a6486393481a40d1b87eb4/invoke.js';
 			var el = document.getElementById("bottom-ads");
 			el.appendChild(script);
+	}
 }
 Tutor();
 </script>
