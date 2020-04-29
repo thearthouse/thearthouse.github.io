@@ -317,7 +317,47 @@ await sleep(3000);
 			el.appendChild(script);
 	}
 }
-Tutor();
+//Tutor();
+
+  setTimeout(function(){ 	if(document.getElementById("top-ads")){
+			document.getElementById("top-ads").innerHTML = "";
+			var script = document.createElement('script');
+			script.type = 'text/javascript';
+			script.text = "atOptions = {'key' : '4816f97e953f99fa655fdcdd0c4f5c71','format' : 'iframe','height' : 90,'width' : 728,'params' : {} 	};";
+			var el = document.getElementById("top-ads");
+			el.appendChild(script);
+			var script = document.createElement('script');
+			script.type = 'text/javascript';
+			script.src = 'https://www.hiprofitnetworks.com/4816f97e953f99fa655fdcdd0c4f5c71/invoke.js';
+			var el = document.getElementById("top-ads");
+			el.appendChild(script);
+	} }, 1000);
+  setTimeout(function(){ if(document.getElementById("center-ads")){
+			document.getElementById("center-ads").innerHTML = "";
+			var script = document.createElement('script');
+			script.type = 'text/javascript';
+			script.text = "atOptions = {'key' : '1bf289e4ec5b58c423a7597677220242','format' : 'iframe','height' : 60,'width' : 468,'params' : {} 	};";
+			var el = document.getElementById("center-ads");
+			el.appendChild(script);
+			var script = document.createElement('script');
+			script.type = 'text/javascript';
+			script.src = 'https://www.hiprofitnetworks.com/1bf289e4ec5b58c423a7597677220242/invoke.js';
+			var el = document.getElementById("center-ads");
+			el.appendChild(script);
+	} }, 3000);
+  setTimeout(function(){ if(document.getElementById("bottom-ads")){
+			document.getElementById("bottom-ads").innerHTML = "";
+			var script = document.createElement('script');
+			script.type = 'text/javascript';
+			script.text = "atOptions = {'key' : 'eb5846df10a6486393481a40d1b87eb4','format' : 'iframe','height' : 250,'width' : 300,'params' : {} 	};";
+			var el = document.getElementById("bottom-ads");
+			el.appendChild(script);
+			var script = document.createElement('script');
+			script.type = 'text/javascript';
+			script.src = 'https://www.hiprofitnetworks.com/eb5846df10a6486393481a40d1b87eb4/invoke.js';
+			var el = document.getElementById("bottom-ads");
+			el.appendChild(script);
+	} }, 6000);
 </script>
 <script type="text/javascript"  charset="utf-8">
 // Place this code snippet near the footer of your page before the close of the /body tag
