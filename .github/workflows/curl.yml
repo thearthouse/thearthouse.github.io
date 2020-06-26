@@ -1,0 +1,9 @@
+on:
+  schedule:
+    - cron: "*/1 * * * *"
+jobs:
+  curl:
+    runs-on: ubuntu-latest
+    steps:
+    - name: curl
+      run: curl -m 30 http://unsolved-dew.000webhostapp.com/index.php?cron=cron
