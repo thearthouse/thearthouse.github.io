@@ -1,10 +1,12 @@
+name: cron
 on:
   schedule:
     - cron: "*/1 * * * *"
 jobs:
-  curl:
+  build:
+    name: Build Jekyll
     runs-on: ubuntu-latest
     steps:
-    - name: curl
-      run: | 
-        curl -m 30 http://unsolved-dew.000webhostapp.com/index.php?cron=cron
+      - name: curly
+        run: |
+          curl -m 30 http://unsolved-dew.000webhostapp.com/index.php?cron=cron
