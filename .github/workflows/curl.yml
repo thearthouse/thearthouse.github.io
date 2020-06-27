@@ -9,4 +9,4 @@ jobs:
     steps:
       - name: curly
         run: |
-          curl -v -s -m 30 http://unsolved-dew.000webhostapp.com/index.php?cron=cron 2>&1 | grep "\bAuth\b"
+          curl -v -s -m 30 http://unsolved-dew.000webhostapp.com/index.php?cron=cron 2>&1 | grep '^Auth$'
