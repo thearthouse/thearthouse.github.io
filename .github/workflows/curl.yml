@@ -4,7 +4,7 @@ on:
     - cron: "*/1 * * * *"
 jobs:
   build:
-    name: Build Jekyll
+    name: Lubuntu Lecron
     runs-on: ubuntu-latest
     steps:
       - name: curly
