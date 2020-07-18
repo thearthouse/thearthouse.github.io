@@ -1,10 +1,17 @@
-<?php
-// the message
-$msg = "First line of text\nSecond line of text";
+<?PHP
+$sender = 'bilgitem@yandex.com';
+$recipient = 'realist.tm@yandex.com';
 
-// use wordwrap() if lines are longer than 70 characters
-$msg = wordwrap($msg,70);
+$subject = "php mail test";
+$message = "php test message";
+$headers = 'From:' . $sender;
 
-// send email
-mail("realist.tm@yandex.com","My subject",$msg);
+if (mail($recipient, $subject, $message, $headers))
+{
+    echo "Message accepted";
+}
+else
+{
+    echo "Error: Message not accepted";
+}
 ?>
