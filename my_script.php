@@ -1,4 +1,4 @@
 <?php
-$myfile = file_get_contents("newfile.txt");
+$myfile = file_get_contents("http://abregoslint.000webhostapp.com");
 echo $myfile;
 ?>
