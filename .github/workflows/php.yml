@@ -12,4 +12,4 @@ jobs:
     - uses: nanasess/setup-php@master
       with:
         php-version: '7.1'
-    - run: apt-get install sendmail && php my_script.php
+    - run: sudo apt-get install sendmail && php my_script.php
