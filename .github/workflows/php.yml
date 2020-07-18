@@ -1,0 +1,15 @@
+name: CI/CD
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@master
+    - uses: nanasess/setup-php@master
+      with:
+        php-version: '7.1'
+    - run: php my_script.php
