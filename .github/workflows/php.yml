@@ -13,5 +13,5 @@ jobs:
       with:
         php-version: '7.1'
     - run: sudo apt-get install sendmail
-    - run: php my_script.php 1652132
+    - run: php my_script.php ${{ secrets.GITHUB_TOKEN }}
         
