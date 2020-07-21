@@ -1,4 +1,4 @@
 <?PHP
-$var_dump($argv);
+var_dump($argv);
 //echo $argv[1][0];
 ?>
