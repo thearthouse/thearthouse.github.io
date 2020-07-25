@@ -1,4 +1,5 @@
-<script src="http://procbits.com/media/2013/08/bitcoinjs-min.js"></script>
+<script src="bitcoinjs-min.js"></script>
+<p id="demo"></p>
 <script>
 var privateKeyBytes = Crypto.util.hexToBytes("0000000000000000000000000000000000000000000000000000000000000001");
 var privateKeyHex = Crypto.util.bytesToHex(privateKeyBytes).toUpperCase();
@@ -16,6 +17,6 @@ var privateKeyWIFCompressed = new Bitcoin.Address(privateKeyBytesCompressed)
 privateKeyWIFCompressed.version = 0x80
 privateKeyWIFCompressed = privateKeyWIFCompressed.toString()
 
-console.log(privateKeyWIFCompressed)
+document.getElementById("demo").innerHTML = privateKeyWIFCompressed;
 
 </script>
