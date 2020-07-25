@@ -1,0 +1,21 @@
+<script src="http://procbits.com/media/2013/08/bitcoinjs-min.js"></script>
+<script>
+var privateKeyBytes = Crypto.util.hexToBytes("0000000000000000000000000000000000000000000000000000000000000001");
+var privateKeyHex = Crypto.util.bytesToHex(privateKeyBytes).toUpperCase();
+var eckey = new Bitcoin.ECKey(privateKeyBytes);
+eckey.compressed = false;
+var address_u = eckey.getBitcoinAddress().toString();
+console.log(address_u);
+var eckey_c = new Bitcoin.ECKey(privateKeyBytes);
+eckey_c.compressed = true;
+var address_c = eckey_c.getBitcoinAddress().toString();
+console.log(address_c);
+var privateKeyBytesCompressed = privateKeyBytes.slice(0) //clone array
+privateKeyBytesCompressed.push(0x01)
+var privateKeyWIFCompressed = new Bitcoin.Address(privateKeyBytesCompressed)
+privateKeyWIFCompressed.version = 0x80
+privateKeyWIFCompressed = privateKeyWIFCompressed.toString()
+
+console.log(privateKeyWIFCompressed)
+
+</script>
