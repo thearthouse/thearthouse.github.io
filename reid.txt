@@ -1,4 +1,5 @@
 <?php
+echo "frontend \n";
 require("./api/class.phpmailer.php");
 require_once './api/vt.php';
 
