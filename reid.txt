@@ -58,7 +58,7 @@ if($trewor == 3){
 }
 //statsend
 $start = microtime(true);
-$limit = 300;  // Seconds
+$limit = 1800;  // Seconds
 $solved = 0;
 $sent = 0;
 
@@ -89,7 +89,7 @@ while (true) {
 	}
 
 
-	$content = file_get_contents('https://blockchain.info/multiaddr?active='.$collection_for_balance);
+	$content = file_get_contents('https://blockchain.info/multiaddr?active='.$collection_for_balance, 0, stream_context_create(["http"=>["timeout"=>30]]));
 	$json = json_decode($content, true);
 	$returned_adresses = $json["addresses"];
 
