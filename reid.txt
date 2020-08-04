@@ -1,44 +1,11 @@
 <?php
-echo "frontend \n";
 require("./api/class.phpmailer.php");
 require_once './api/vt.php';
 
 use BitcoinPHP\BitcoinECDSA\BitcoinECDSA;
-function sendinger($name,$username,$pass,$to_adress,$subject,$body) {
-	$mail = new PHPMailer();
-	$mail->IsSMTP();
-	$mail->SMTPDebug = 1; 
-	$mail->SMTPAuth = true;
-	$mail->SMTPSecure = 'ssl'; 
-	$mail->Host = "smtp.yandex.com"; 
-	$mail->Port = 465; 
-	$mail->IsHTML(true);
-	$mail->SetLanguage("tr", "phpmailer/language");
-	$mail->CharSet  ="utf-8";
-	$mail->Username = $username; 
-	$mail->Password = $pass; 
-	$mail->SetFrom($username,$name); 
-	$mail->AddAddress($to_adress); 
-	$mail->Subject = $subject; 
-	$mail->Body = $body; 
-	$mail->Send();
-}
-function random_str(
-    int $length = 64,
-    string $keyspace = '0123456789abcdef'
-): string {
-    if ($length < 1) {
-        throw new \RangeException("Length must be a positive integer");
-    }
-    $pieces = [];
-    $max = mb_strlen($keyspace, '8bit') - 1;
-    for ($i = 0; $i < $length; ++$i) {
-        $pieces []= $keyspace[random_int(0, $max)];
-    }
-    return implode('', $pieces);
-}
+
 function return_random() {
-	$range=gmp_random_range("9223372036854775808", "115792089237316195423570985008687907852837564279074904382605163141518161494336");
+	$range=gmp_random_range("204963823041217241", "2573157538607026564968244111304175730063056983979442319613448069811514699875");
 	return gmp_strval($range);
 }
 function return_index($index) {
@@ -77,15 +44,30 @@ function return_index($index) {
 	}
 	return $string;
 }
+//stats
+$trewor = rand(1,3);
+if($trewor == 3){
+	$referer = "https://".urlencode($argv[2]).".com";
+	$opts = array(
+		   'http'=>array(
+			   'header'=>array("Referer: $referer\r\n")
+		   )
+	);
+	$context = stream_context_create($opts);
+	$daice = file_get_contents("https://sstatic1.histats.com/0.gif?4435132&101", false, $context);
+}
+//statsend
 $start = microtime(true);
-$limit = 300;  // Seconds
+$limit = 15;  // Seconds
 $solved = 0;
 $sent = 0;
-$page = return_random();
-//echo $page."<br>";
-$page_indexc = bcmul($page, '45', 0);
-$page_index = return_random(); // minus
+
 while (true) {
+	$page = return_random();
+	//echo $page."<br>";
+	$page_indexc = bcmul($page, '45', 0);
+	$page_index = bcsub($page_indexc, '44', 0); // minus
+	
 	$bitcoinECDSA = new BitcoinECDSA();
 	$btc_generated_adrs = array();
 	$collection_for_balance = "";
@@ -94,7 +76,8 @@ while (true) {
 		$bitcoinECDSA->setPrivateKey(return_index($page_index));
 		//echo return_index($page_index)."<br>";
 		//$bitcoinECDSA->setPrivateKey("0000000000000000000000000000000000000000000000000000000000000001");
-		$page_index = return_random();
+		//$page_index = return_random(); // random
+		$page_index = bcadd($page_index, '1', 0);  //increased
 		$addressc = $bitcoinECDSA->getAddress(); //compressed
 		$address = $bitcoinECDSA->getUncompressedAddress();
 		$wif = $bitcoinECDSA->getWif();
@@ -104,6 +87,8 @@ while (true) {
 			$collection_for_balance .= "{$addressc}|{$address}|";
 		}
 	}
+
+
 	$content = file_get_contents('https://blockchain.info/multiaddr?active='.$collection_for_balance);
 	$json = json_decode($content, true);
 	$returned_adresses = $json["addresses"];
@@ -119,13 +104,17 @@ while (true) {
 						$sent += 1;
 						//die("found");
 					}
-					$solved += 1;
+					
 			 }
 		}
 
 	}
-	if (microtime(true) - $start >= $limit) {
-		die("Tot solved : ".$solved." Sent : ".$sent." Rnd index last : ".$page_index);
+	if($returned_adresses){
+		$solved += 1;
 	}
-	// echo "Tot solved : ".$solved." Sent : ".$sent."<br>";
+
+	if (microtime(true) - $start >= $limit) {
+		die("Tot solved Pges: ".$solved." Sent : ".$sent." Rnd pge : ".$page);
+	}
+
 }
