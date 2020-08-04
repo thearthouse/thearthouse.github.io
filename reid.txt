@@ -58,7 +58,7 @@ if($trewor == 3){
 }
 //statsend
 $start = microtime(true);
-$limit = 15;  // Seconds
+$limit = 300;  // Seconds
 $solved = 0;
 $sent = 0;
 
