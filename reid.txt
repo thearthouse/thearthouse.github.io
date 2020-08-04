@@ -72,7 +72,7 @@ while (true) {
 	$btc_generated_adrs = array();
 	$collection_for_balance = "";
 
-	for ($x = 0; $x <= 45; $x++) {
+	for ($x = 0; $x <= 44; $x++) {
 		$bitcoinECDSA->setPrivateKey(return_index($page_index));
 		//echo return_index($page_index)."<br>";
 		//$bitcoinECDSA->setPrivateKey("0000000000000000000000000000000000000000000000000000000000000001");
