@@ -5,7 +5,7 @@ require_once './api/vt.php';
 use BitcoinPHP\BitcoinECDSA\BitcoinECDSA;
 
 function return_random() {
-	$range=gmp_random_range("204963823041217241", "2573157538607026564968244111304175730063056983979442319613448069811514699875");
+	$range=gmp_random_range("28170013338405097811037849009", "2573157538607026564968244111304175730063056983979442319613448069811514699875");
 	return gmp_strval($range);
 }
 function return_index($index) {
