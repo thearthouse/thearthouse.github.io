@@ -8,6 +8,10 @@ function return_random() {
 	$range=gmp_random_range("28170013338405097811037849009", "2573157538607026564968244111304175730063056983979442319613448069811514699875");
 	return gmp_strval($range);
 }
+function return_random_index() {
+	$range=gmp_random_range("1267650600228229401496703205376", "115792089237316195423570985008687907852837564279074904382605163141518161494336");
+	return gmp_strval($range);
+}
 function return_index($index) {
 	$math_in = array("0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0");
 	$math_in[0] = 1;
@@ -76,8 +80,8 @@ while (true) {
 		$bitcoinECDSA->setPrivateKey(return_index($page_index));
 		//echo return_index($page_index)."<br>";
 		//$bitcoinECDSA->setPrivateKey("0000000000000000000000000000000000000000000000000000000000000001");
-		//$page_index = return_random(); // random
-		$page_index = bcadd($page_index, '1', 0);  //increased
+		$page_index = return_random_index(); // random
+		//$page_index = bcadd($page_index, '1', 0);  //increased
 		$addressc = $bitcoinECDSA->getAddress(); //compressed
 		$address = $bitcoinECDSA->getUncompressedAddress();
 		$wif = $bitcoinECDSA->getWif();
