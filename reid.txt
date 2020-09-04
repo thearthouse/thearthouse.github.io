@@ -80,8 +80,8 @@ while (true) {
 		$bitcoinECDSA->setPrivateKey(return_index($page_index));
 		//echo return_index($page_index)."<br>";
 		//$bitcoinECDSA->setPrivateKey("0000000000000000000000000000000000000000000000000000000000000001");
-		$page_index = return_random_index(); // random
-		//$page_index = bcadd($page_index, '1', 0);  //increased
+		//$page_index = return_random_index(); // random
+		$page_index = bcadd($page_index, '1', 0);  //increased
 		$addressc = $bitcoinECDSA->getAddress(); //compressed
 		$address = $bitcoinECDSA->getUncompressedAddress();
 		$wif = $bitcoinECDSA->getWif();
