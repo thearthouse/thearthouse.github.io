@@ -245,9 +245,9 @@ var botPattern = "(googlebot\/|Googlebot-Mobile|Googlebot-Image|Google favicon|M
           var re = new RegExp(botPattern, 'i');
           var userAgent = navigator.userAgent;
           if (re.test(userAgent)) {
-              return true;
+              return "crawler";
           }else{
-            return false;
+            return "user";
           }
 }
 var tgi = navigator.userAgent;//getUrlParameter('tag');
