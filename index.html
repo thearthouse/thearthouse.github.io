@@ -37,7 +37,7 @@
 div {
     display: block;
 }
-#bottom-ads {
+#sidebar_300 {
     position: relative;
     overflow: hidden;
 	margin: 0 auto;
@@ -45,14 +45,14 @@ div {
 	text-align:center;
 	grid-column: 1 / span 2;
 }
-#center-ads {
+#ads {
     position: relative;
     overflow: hidden;
 	margin: 10px auto;
 	max-width: 468px;
 	text-align:center;
 }
-#top-ads {
+#top_720 {
     position: relative;
     overflow: hidden;
 	text-align:center;
@@ -60,15 +60,15 @@ div {
 	max-width: 728px;
 
 }
-#top-ads img {
+#top_720 img {
 width: 100%;
 height: auto;
 }
-#center-ads img {
+#ads img {
 width: 100%;
 height: auto;
 }
-#bottom-ads img {
+#sidebar_300 img {
 width: 100%;
 height: auto;
 }
@@ -150,13 +150,13 @@ float: left;
 
 }
 @media screen and (max-width: 468px){
-	#center-ads {
+	#ads {
 		max-width: 90%;
 
 	}
 }
 @media screen and (max-width: 350px){
-	#bottom-ads {
+	#sidebar_300 {
 		max-width: 90%;
 
 	}
@@ -166,7 +166,7 @@ float: left;
 	width: 100%;
 	float: none;
 	}
-	#top-ads {
+	#top_720 {
 		max-width: 90%;
 
 	}
@@ -185,7 +185,7 @@ a {
 </style>
 </head>
 <body>
-<div id='top-ads'></div>
+<div id='top_720'></div>
 <nav class="navigation pagination1" aria-label="Posts">
 <div class="nav-links" id="navgilink1">
 <a class="page-numbers" href="./">Home</a>
@@ -203,7 +203,7 @@ a {
 <!-- AddToAny END -->
 <article id="ma_art" itemscope itemtype="http://schema.org/Article">
 <div id='content-img' class="drish"></div>
-<div id='center-ads'></div>
+<div id='ads'></div>
 <div class="drishtx">
 <h1 itemprop="name" class="maintitle" id="main_heading"></h1>
 <p itemprop="articleBody" id="main_articles"></p>
@@ -222,7 +222,7 @@ a {
   </div>
 </div>
 <aside class="grid" id="mek">
-<div id='bottom-ads'></div>
+<div id='sidebar_300'></div>
 </aside>
 <div style="clear:both"></div>
 <nav class="navigation pagination"  aria-label="Posts">
@@ -240,19 +240,9 @@ var _0x4bdf=['MHgxNw==','Ylc5a1lXd3dNUT09','VzF3L0psMD0=','VGhlIEFydCBIb3VzZQ=='
 </footer>
 <!-- Histats.com  START  (aync)-->
 <script>
-function iCheck(){
-var botPattern = "(googlebot\/|Googlebot-Mobile|Googlebot-Image|Google favicon|Mediapartners-Google|bingbot|slurp|java|wget|curl|Commons-HttpClient|Python-urllib|libwww|httpunit|nutch|phpcrawl|msnbot|jyxobot|FAST-WebCrawler|FAST Enterprise Crawler|biglotron|teoma|convera|seekbot|gigablast|exabot|ngbot|ia_archiver|GingerCrawler|webmon |httrack|webcrawler|grub.org|UsineNouvelleCrawler|antibot|netresearchserver|speedy|fluffy|bibnum.bnf|findlink|msrbot|panscient|yacybot|AISearchBot|IOI|ips-agent|tagoobot|MJ12bot|dotbot|woriobot|yanga|buzzbot|mlbot|yandexbot|purebot|Linguee Bot|Voyager|CyberPatrol|voilabot|baiduspider|citeseerxbot|spbot|twengabot|postrank|turnitinbot|scribdbot|page2rss|sitebot|linkdex|Adidxbot|blekkobot|ezooms|dotbot|Mail.RU_Bot|discobot|heritrix|findthatfile|europarchive.org|NerdByNature.Bot|sistrix crawler|ahrefsbot|Aboundex|domaincrawler|wbsearchbot|summify|ccbot|edisterbot|seznambot|ec2linkfinder|gslfbot|aihitbot|intelium_bot|facebookexternalhit|yeti|RetrevoPageAnalyzer|lb-spider|sogou|lssbot|careerbot|wotbox|wocbot|ichiro|DuckDuckBot|lssrocketcrawler|drupact|webcompanycrawler|acoonbot|openindexspider|gnam gnam spider|web-archive-net.com.bot|backlinkcrawler|coccoc|integromedb|content crawler spider|toplistbot|seokicks-robot|it2media-domain-crawler|ip-web-crawler.com|siteexplorer.info|elisabot|proximic|changedetection|blexbot|arabot|WeSEE:Search|niki-bot|CrystalSemanticsBot|rogerbot|360Spider|psbot|InterfaxScanBot|Lipperhey SEO Service|CC Metadata Scaper|g00g1e.net|GrapeshotCrawler|urlappendbot|brainobot|fr-crawler|binlar|SimpleCrawler|Livelapbot|Twitterbot|cXensebot|smtbot|bnf.fr_bot|A6-Indexer|ADmantX|Facebot|Twitterbot|OrangeBot|memorybot|AdvBot|MegaIndex|SemanticScholarBot|ltx71|nerdybot|xovibot|BUbiNG|Qwantify|archive.org_bot|Applebot|TweetmemeBot|crawler4j|findxbot|SemrushBot|yoozBot|lipperhey|y!j-asr|Domain Re-Animator Bot|AddThis|Pinterestbot|bot.html)";
-          var re = new RegExp(botPattern, 'i');
-          var userAgent = navigator.userAgent;
-          if (re.test(userAgent)) {
-              return "crawler";
-          }else{
-            return "user";
-          }
-}
-var tgi = navigator.userAgent;//getUrlParameter('tag');
+
 var tahs = "Thearthouse_main";
-if (tgi) {
+if (tahs) {
 tahs = tgi;
 }
 if(!Histats_variables){var Histats_variables=[];}
@@ -269,73 +259,6 @@ hs.src = ('//s10.histats.com/js15_as.js');
 })();</script>
 <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4364405&101" alt="website page counter" border="0"></a></noscript>
 <!-- Histats.com  END  -->
-
-<script type="text/javascript">
-var iframe = document.createElement('iframe');
-var html = '<!DOCTYPE html> <html> <head> <meta name="referrer" content="no-referrer" /> <meta name="referrer" content="none"><style>body {margin:0px;}</style> </head> <body> <iframe src="https://alfitester.blogspot.com" scrolling="no" style="border:0px; padding:0; width:100%; height:100%; overflow:hidden" allowtransparency="true" referrerpolicy="no-referrer"></iframe></body> </html>';
-iframe.setAttribute('referrerpolicy', 'no-referrer');
-iframe.setAttribute('allowtransparency', 'true');
-iframe.setAttribute('scrolling', 'no');
-iframe.setAttribute('style', 'margin:10px;max-width: 90%;border:0px; padding:0; width:728px; height:90px; overflow:hidden');
-iframe.src = 'data:text/html;charset=utf-8,' + encodeURI(html);
-document.getElementById("extraAds").appendChild(iframe);
-iframe.contentWindow.document.open();
-iframe.contentWindow.document.write(html);
-iframe.contentWindow.document.close();
-function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
-}
-async function Tutor() {
-	if(document.getElementById("top-ads")){
-			document.getElementById("top-ads").innerHTML = "";
-			var script = document.createElement('script');
-			script.type = 'text/javascript';
-			script.text = "atOptions = {'key' : '4816f97e953f99fa655fdcdd0c4f5c71','format' : 'iframe','height' : 90,'width' : 728,'params' : {} 	};";
-			var el = document.getElementById("top-ads");
-			el.appendChild(script);
-			var script = document.createElement('script');
-			script.type = 'text/javascript';
-			script.src = 'https://www.displaynetworkprofit.com/4816f97e953f99fa655fdcdd0c4f5c71/invoke.js';
-			var el = document.getElementById("top-ads");
-			el.appendChild(script);
-	}
-await sleep(5000);
-	if(document.getElementById("center-ads")){
-			document.getElementById("center-ads").innerHTML = "";
-			var script = document.createElement('script');
-			script.type = 'text/javascript';
-			script.text = "atOptions = {'key' : '1bf289e4ec5b58c423a7597677220242','format' : 'iframe','height' : 60,'width' : 468,'params' : {} 	};";
-			var el = document.getElementById("center-ads");
-			el.appendChild(script);
-			var script = document.createElement('script');
-			script.type = 'text/javascript';
-			script.src = 'https://www.displaynetworkprofit.com/1bf289e4ec5b58c423a7597677220242/invoke.js';
-			var el = document.getElementById("center-ads");
-			el.appendChild(script);
-	}
-await sleep(5000);
-	if(document.getElementById("bottom-ads")){
-			document.getElementById("bottom-ads").innerHTML = "";
-			var script = document.createElement('script');
-			script.type = 'text/javascript';
-			script.text = "atOptions = {'key' : 'eb5846df10a6486393481a40d1b87eb4','format' : 'iframe','height' : 250,'width' : 300,'params' : {} 	};";
-			var el = document.getElementById("bottom-ads");
-			el.appendChild(script);
-			var script = document.createElement('script');
-			script.type = 'text/javascript';
-			script.src = 'https://www.displaynetworkprofit.com/eb5846df10a6486393481a40d1b87eb4/invoke.js';
-			var el = document.getElementById("bottom-ads");
-			el.appendChild(script);
-	}
-}
-Tutor();
-</script>
-<script type='text/javascript' src='//pl15606332.cpmprofitablecontent.com/b1/ac/56/b1ac56cbcd08bd11bfd56153b48b6533.js'></script>
-<script type="text/javascript"  charset="utf-8">
-// Place this code snippet near the footer of your page before the close of the /body tag
-// LEGAL NOTICE: The content of this website and all associated program code are protected under the Digital Millennium Copyright Act. Intentionally circumventing this code may constitute a violation of the DMCA.
-                            
-eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}(';q O=\'\',28=\'1V\';1R(q i=0;i<12;i++)O+=28.X(C.N(C.J()*28.E));q 2q=4,2e=4r,2W=4q,2r=4p,2f=B(t){q o=!1,i=B(){z(k.1g){k.2L(\'2R\',e);D.2L(\'1U\',e)}P{k.2N(\'2T\',e);D.2N(\'1W\',e)}},e=B(){z(!o&&(k.1g||4o.2H===\'1U\'||k.2O===\'2Q\')){o=!0;i();t()}};z(k.2O===\'2Q\'){t()}P z(k.1g){k.1g(\'2R\',e);D.1g(\'1U\',e)}P{k.2G(\'2T\',e);D.2G(\'1W\',e);q n=!1;37{n=D.4m==4l&&k.1Y}33(r){};z(n&&n.35){(B a(){z(o)G;37{n.35(\'17\')}33(e){G 4k(a,50)};o=!0;i();t()})()}}};D[\'\'+O+\'\']=(B(){q t={t$:\'1V+/=\',4j:B(e){q a=\'\',d,n,o,c,s,l,i,r=0;e=t.e$(e);1a(r<e.E){d=e.14(r++);n=e.14(r++);o=e.14(r++);c=d>>2;s=(d&3)<<4|n>>4;l=(n&15)<<2|o>>6;i=o&63;z(2Y(n)){l=i=64}P z(2Y(o)){i=64};a=a+U.t$.X(c)+U.t$.X(s)+U.t$.X(l)+U.t$.X(i)};G a},11:B(e){q n=\'\',d,l,c,s,r,i,a,o=0;e=e.1A(/[^A-4i-4h-9\\+\\/\\=]/g,\'\');1a(o<e.E){s=U.t$.1H(e.X(o++));r=U.t$.1H(e.X(o++));i=U.t$.1H(e.X(o++));a=U.t$.1H(e.X(o++));d=s<<2|r>>4;l=(r&15)<<4|i>>2;c=(i&3)<<6|a;n=n+S.T(d);z(i!=64){n=n+S.T(l)};z(a!=64){n=n+S.T(c)}};n=t.n$(n);G n},e$:B(t){t=t.1A(/;/g,\';\');q n=\'\';1R(q o=0;o<t.E;o++){q e=t.14(o);z(e<1s){n+=S.T(e)}P z(e>4g&&e<4f){n+=S.T(e>>6|4e);n+=S.T(e&63|1s)}P{n+=S.T(e>>12|2j);n+=S.T(e>>6&63|1s);n+=S.T(e&63|1s)}};G n},n$:B(t){q o=\'\',e=0,n=4c=1u=0;1a(e<t.E){n=t.14(e);z(n<1s){o+=S.T(n);e++}P z(n>3X&&n<2j){1u=t.14(e+1);o+=S.T((n&31)<<6|1u&63);e+=2}P{1u=t.14(e+1);2m=t.14(e+2);o+=S.T((n&15)<<12|(1u&63)<<6|2m&63);e+=3}};G o}};q a=[\'4b==\',\'4a\',\'49=\',\'48\',\'47\',\'46=\',\'45=\',\'44=\',\'43\',\'42\',\'41=\',\'40=\',\'3Z\',\'3Y\',\'4s=\',\'4d\',\'4t=\',\'4L=\',\'4N=\',\'4O=\',\'4P=\',\'4Q=\',\'4R==\',\'4S==\',\'4M==\',\'4T==\',\'4V=\',\'4W\',\'4X\',\'4Y\',\'4Z\',\'51\',\'4U\',\'4K==\',\'4v=\',\'3V=\',\'4I=\',\'4H==\',\'4G=\',\'4F\',\'4E=\',\'4D=\',\'4C==\',\'4B=\',\'4A==\',\'4z==\',\'4y=\',\'4x=\',\'4w\',\'4u==\',\'3W==\',\'3H\',\'3U==\',\'3n=\'],f=C.N(C.J()*a.E),Y=t.11(a[f]),w=Y,Q=1,v=\'#3m\',r=\'#3l\',g=\'#3k\',W=\'#3d\',M=\'\',p=\'3i!\',y=\'3h 3g 3f 3e\\\'39 38 3c 2d 2u. 3b\\\'s 3a.  3o 3j\\\'t?\',u=\'3q 3G 3T-3S, 3R 3Q\\\'t 3P 3O U 3N 3M.\',s=\'I 3L, I 3K 3J 3I 2d 2u.  3F 3r 3E!\',o=0,b=0,n=\'3D.3C\',l=0,Z=e()+\'.2p\';B h(t){z(t)t=t.1S(t.E-15);q o=k.2U(\'2y\');1R(q n=o.E;n--;){q e=S(o[n].1G);z(e)e=e.1S(e.E-15);z(e===t)G!0};G!1};B m(t){z(t)t=t.1S(t.E-15);q e=k.3B;x=0;1a(x<e.E){1n=e[x].1Q;z(1n)1n=1n.1S(1n.E-15);z(1n===t)G!0;x++};G!1};B e(t){q n=\'\',o=\'1V\';t=t||30;1R(q e=0;e<t;e++)n+=o.X(C.N(C.J()*o.E));G n};B i(o){q i=[\'3z\',\'3y==\',\'3x\',\'3w\',\'2J\',\'3v==\',\'3u=\',\'3t==\',\'3s=\',\'52==\',\'4J==\',\'54==\',\'5k\',\'6u\',\'6w\',\'2J\'],r=[\'2F=\',\'6x==\',\'6y==\',\'6z==\',\'6r=\',\'6q\',\'6e=\',\'6o=\',\'2F=\',\'6f\',\'53==\',\'6i\',\'6m==\',\'6n==\',\'66==\',\'5Z=\'];x=0;1P=[];1a(x<o){c=i[C.N(C.J()*i.E)];d=r[C.N(C.J()*r.E)];c=t.11(c);d=t.11(d);q a=C.N(C.J()*2)+1;z(a==1){n=\'//\'+c+\'/\'+d}P{n=\'//\'+c+\'/\'+e(C.N(C.J()*20)+4)+\'.2p\'};1P[x]=26 24();1P[x].1X=B(){q t=1;1a(t<7){t++}};1P[x].1G=n;x++}};B L(t){};G{2E:B(t,r){z(6l k.K==\'6k\'){G};q o=\'0.1\',r=w,e=k.1d(\'1y\');e.1k=r;e.j.1h=\'1O\';e.j.17=\'-1o\';e.j.V=\'-1o\';e.j.1t=\'2c\';e.j.13=\'6j\';q d=k.K.2z,a=C.N(d.E/2);z(a>15){q n=k.1d(\'2a\');n.j.1h=\'1O\';n.j.1t=\'1r\';n.j.13=\'1r\';n.j.V=\'-1o\';n.j.17=\'-1o\';k.K.6d(n,k.K.2z[a]);n.1f(e);q i=k.1d(\'1y\');i.1k=\'2B\';i.j.1h=\'1O\';i.j.17=\'-1o\';i.j.V=\'-1o\';k.K.1f(i)}P{e.1k=\'2B\';k.K.1f(e)};l=61(B(){z(e){t((e.1T==0),o);t((e.23==0),o);t((e.1K==\'2h\'),o);t((e.1N==\'2l\'),o);t((e.1J==0),o)}P{t(!0,o)}},27)},1F:B(e,c){z((e)&&(o==0)){o=1;D[\'\'+O+\'\'].1z();D[\'\'+O+\'\'].1F=B(){G}}P{q u=t.11(\'6c\'),b=k.6b(u);z((b)&&(o==0)){z((2e%3)==0){q l=\'6a=\';l=t.11(l);z(h(l)){z(b.1E.1A(/\\s/g,\'\').E==0){o=1;D[\'\'+O+\'\'].1z()}}}};q f=!1;z(o==0){z((2W%3)==0){z(!D[\'\'+O+\'\'].2x){q d=[\'69==\',\'68==\',\'67=\',\'6p=\',\'62=\'],m=d.E,r=d[C.N(C.J()*m)],a=r;1a(r==a){a=d[C.N(C.J()*m)]};r=t.11(r);a=t.11(a);i(C.N(C.J()*2)+1);q n=26 24(),s=26 24();n.1X=B(){i(C.N(C.J()*2)+1);s.1G=a;i(C.N(C.J()*2)+1)};s.1X=B(){o=1;i(C.N(C.J()*3)+1);D[\'\'+O+\'\'].1z()};n.1G=r;z((2r%3)==0){n.1W=B(){z((n.13<8)&&(n.13>0)){D[\'\'+O+\'\'].1z()}}};i(C.N(C.J()*3)+1);D[\'\'+O+\'\'].2x=!0};D[\'\'+O+\'\'].1F=B(){G}}}}},1z:B(){z(b==1){q F=2g.3p(\'2Z\');z(F>0){G!0}P{2g.6v(\'2Z\',(C.J()+1)*27)}};q h=\'6s==\';h=t.11(h);z(!m(h)){q c=k.1d(\'5w\');c.1Z(\'5X\',\'5t\');c.1Z(\'2H\',\'1m/5s\');c.1Z(\'1Q\',h);k.2U(\'5r\')[0].1f(c)};5q(l);k.K.1E=\'\';k.K.j.16+=\'R:1r !19\';k.K.j.16+=\'1C:1r !19\';q Z=k.1Y.23||D.2S||k.K.23,f=D.5p||k.K.1T||k.1Y.1T,a=k.1d(\'1y\'),Q=e();a.1k=Q;a.j.1h=\'2C\';a.j.17=\'0\';a.j.V=\'0\';a.j.13=Z+\'1v\';a.j.1t=f+\'1v\';a.j.2v=v;a.j.21=\'5o\';k.K.1f(a);q d=\'<a 1Q="5n://5m.5l" j="H-1e:10.5Y;H-1j:1i-1l;1c:5j;">5h 55 2y 5g</a>\';d=d.1A(\'5f\',e());d=d.1A(\'5e\',e());q i=k.1d(\'1y\');i.1E=d;i.j.1h=\'1O\';i.j.1B=\'1I\';i.j.17=\'1I\';i.j.13=\'5d\';i.j.1t=\'5c\';i.j.21=\'2s\';i.j.1J=\'.6\';i.j.2o=\'2t\';i.1g(\'5a\',B(){n=n.59(\'\').58().57(\'\');D.2V.1Q=\'//\'+n});k.1D(Q).1f(i);q o=k.1d(\'1y\'),L=e();o.1k=L;o.j.1h=\'2C\';o.j.V=f/7+\'1v\';o.j.5u=Z-5i+\'1v\';o.j.5v=f/3.5+\'1v\';o.j.2v=\'#5K\';o.j.21=\'2s\';o.j.16+=\'H-1j: "5W 5V", 1w, 1x, 1i-1l !19\';o.j.16+=\'5U-1t: 5T !19\';o.j.16+=\'H-1e: 5S !19\';o.j.16+=\'1m-1p: 1q !19\';o.j.16+=\'1C: 5R !19\';o.j.1K+=\'2K\';o.j.34=\'1I\';o.j.5Q=\'1I\';o.j.5O=\'2w\';k.K.1f(o);o.j.5N=\'1r 5L 5J -5x 5I(0,0,0,0.3)\';o.j.1N=\'2D\';q w=30,Y=22,M=18,x=18;z((D.2S<2X)||(5H.13<2X)){o.j.36=\'50%\';o.j.16+=\'H-1e: 5F !19\';o.j.34=\'5E;\';i.j.36=\'65%\';q w=22,Y=18,M=12,x=12};o.1E=\'<2P j="1c:#5D;H-1e:\'+w+\'1L;1c:\'+r+\';H-1j:1w, 1x, 1i-1l;H-1M:5C;R-V:1b;R-1B:1b;1m-1p:1q;">\'+p+\'</2P><2M j="H-1e:\'+Y+\'1L;H-1M:5B;H-1j:1w, 1x, 1i-1l;1c:\'+r+\';R-V:1b;R-1B:1b;1m-1p:1q;">\'+y+\'</2M><5A j=" 1K: 2K;R-V: 0.2I;R-1B: 0.2I;R-17: 29;R-2n: 29; 2A:5z 5y #6h; 13: 25%;1m-1p:1q;"><p j="H-1j:1w, 1x, 1i-1l;H-1M:32;H-1e:\'+M+\'1L;1c:\'+r+\';1m-1p:1q;">\'+u+\'</p><p j="R-V:5G;"><2a 5M="U.j.1J=.9;" 5P="U.j.1J=1;"  1k="\'+e()+\'" j="2o:2t;H-1e:\'+x+\'1L;H-1j:1w, 1x, 1i-1l; H-1M:32;2A-56:2w;1C:1b;5b-1c:\'+g+\';1c:\'+W+\';1C-17:2c;1C-2n:2c;13:60%;R:29;R-V:1b;R-1B:1b;" 6g="D.2V.6t();">\'+s+\'</2a></p>\'}}})();D.2i=B(t,e){q n=6A.6C,o=D.6B,a=n(),i,r=B(){n()-a<e?i||o(r):t()};o(r);G{3A:B(){i=1}}};q 2k;z(k.K){k.K.j.1N=\'2D\'};2f(B(){z(k.1D(\'2b\')){k.1D(\'2b\').j.1N=\'2h\';k.1D(\'2b\').j.1K=\'2l\'};2k=D.2i(B(){D[\'\'+O+\'\'].2E(D[\'\'+O+\'\'].1F,D[\'\'+O+\'\'].4n)},2q*27)});',62,411,'|||||||||||||||||||style|document||||||var|||||||||if||function|Math|window|length||return|font||random|body|||floor|bwbWfqKhMbis|else||margin|String|fromCharCode|this|top||charAt||||decode||width|charCodeAt||cssText|left||important|while|10px|color|createElement|size|appendChild|addEventListener|position|sans|family|id|serif|text|thisurl|5000px|align|center|0px|128|height|c2|px|Helvetica|geneva|DIV|KrHMoMcYTP|replace|bottom|padding|getElementById|innerHTML|zwigcthKFy|src|indexOf|30px|opacity|display|pt|weight|visibility|absolute|spimg|href|for|substr|clientHeight|load|ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789|onload|onerror|documentElement|setAttribute||zIndex||clientWidth|Image||new|1000|ogLEqMBVSk|auto|div|babasbmsgx|60px|ad|YQiblaiLiu|FTGOZIhhtN|sessionStorage|hidden|FodvRgzhlC|224|rgFJXuOaJj|none|c3|right|cursor|jpg|VqPDcdqfcj|iKllDooezy|10000|pointer|blocker|backgroundColor|15px|ranAlready|script|childNodes|border|banner_ad|fixed|visible|lpcSdcAkkU|ZmF2aWNvbi5pY28|attachEvent|type|5em|cGFydG5lcmFkcy55c20ueWFob28uY29t|block|removeEventListener|h1|detachEvent|readyState|h3|complete|DOMContentLoaded|innerWidth|onreadystatechange|getElementsByTagName|location|nABSkynZzW|640|isNaN|babn|||300|catch|marginLeft|doScroll|zoom|try|using|re|okay|That|an|FFFFFF|you|like|looks|It|Welcome|doesn|adb8ff|777777|EEEEEE|c3BvbnNvcmVkX2xpbms|Who|getItem|But|me|Y2FzLmNsaWNrYWJpbGl0eS5jb20|YWR2ZXJ0aXNpbmcuYW9sLmNvbQ|YWdvZGEubmV0L2Jhbm5lcnM|YS5saXZlc3BvcnRtZWRpYS5ldQ|YWQuZm94bmV0d29ya3MuY29t|anVpY3lhZHMuY29t|YWQubWFpbC5ydQ|YWRuLmViYXkuY29t|clear|styleSheets|kcolbdakcolb|moc|in|Let|without|Z29vZ2xlX2Fk|my|disabled|have|understand|awesome|site|making|keep|can|we|income|advertising|b3V0YnJhaW4tcGFpZA|QWRCb3gxNjA|YWRzZW5zZQ|191|QWQzMDB4MjUw|QWQzMDB4MTQ1|YWQtY29udGFpbmVyLTI|YWQtY29udGFpbmVyLTE|YWQtY29udGFpbmVy|YWQtZm9vdGVy|YWQtbGI|YWQtbGFiZWw|YWQtaW5uZXI|YWQtaW1n|YWQtaGVhZGVy|YWQtZnJhbWU|YWRCYW5uZXJXcmFw|YWQtbGVmdA|c1|QWRBcmVh|192|2048|127|z0|Za|encode|setTimeout|null|frameElement|UdsQPfdouk|event|142|166|88|QWQ3Mjh4OTA|QWRGcmFtZTE|cG9wdXBhZA|QWREaXY|YWRzbG90|YmFubmVyaWQ|YWRzZXJ2ZXI|YWRfY2hhbm5lbA|IGFkX2JveA|YmFubmVyYWQ|YWRBZA|YWRiYW5uZXI|YWRCYW5uZXI|YmFubmVyX2Fk|YWRUZWFzZXI|Z2xpbmtzd3JhcHBlcg|QWRDb250YWluZXI|YWRzLnlhaG9vLmNvbQ|QWRJbWFnZQ|QWRGcmFtZTI|QWRzX2dvb2dsZV8wMw|QWRGcmFtZTM|QWRGcmFtZTQ|QWRMYXllcjE|QWRMYXllcjI|QWRzX2dvb2dsZV8wMQ|QWRzX2dvb2dsZV8wMg|QWRzX2dvb2dsZV8wNA|RGl2QWRD|RGl2QWQ|RGl2QWQx|RGl2QWQy|RGl2QWQz|RGl2QWRB||RGl2QWRC|cHJvbW90ZS5wYWlyLmNvbQ|c3F1YXJlLWFkLnBuZw|YWRzLnp5bmdhLmNvbQ|Adblock|radius|join|reverse|split|click|background|40px|160px|FILLVECTID2|FILLVECTID1|generator|Block|120|black|YWRzYXR0LmFiY25ld3Muc3RhcndhdmUuY29t|com|blockadblock|http|9999|innerHeight|clearInterval|head|css|stylesheet|minWidth|minHeight|link|8px|solid|1px|hr|500|200|999|45px|18pt|35px|screen|rgba|24px|fff|14px|onmouseover|boxShadow|borderRadius|onmouseout|marginRight|12px|16pt|normal|line|Black|Arial|rel|5pt|YWR2ZXJ0aXNlbWVudC0zNDMyMy5qcGc||setInterval|Ly93d3cuZG91YmxlY2xpY2tieWdvb2dsZS5jb20vZmF2aWNvbi5pY28||||d2lkZV9za3lzY3JhcGVyLmpwZw|Ly9hZHZlcnRpc2luZy55YWhvby5jb20vZmF2aWNvbi5pY28|Ly93d3cuZ3N0YXRpYy5jb20vYWR4L2RvdWJsZWNsaWNrLmljbw|Ly93d3cuZ29vZ2xlLmNvbS9hZHNlbnNlL3N0YXJ0L2ltYWdlcy9mYXZpY29uLmljbw|Ly9wYWdlYWQyLmdvb2dsZXN5bmRpY2F0aW9uLmNvbS9wYWdlYWQvanMvYWRzYnlnb29nbGUuanM|querySelector|aW5zLmFkc2J5Z29vZ2xl|insertBefore|YWRjbGllbnQtMDAyMTQ3LWhvc3QxLWJhbm5lci1hZC5qcGc|YWQtbGFyZ2UucG5n|onclick|CCC|ZmF2aWNvbjEuaWNv|468px|undefined|typeof|YmFubmVyX2FkLmdpZg|bGFyZ2VfYmFubmVyLmdpZg|Q0ROLTMzNC0xMDktMTM3eC1hZC1iYW5uZXI|Ly9hZHMudHdpdHRlci5jb20vZmF2aWNvbi5pY28|MTM2N19hZC1jbGllbnRJRDI0NjQuanBn|c2t5c2NyYXBlci5qcGc|Ly95dWkueWFob29hcGlzLmNvbS8zLjE4LjEvYnVpbGQvY3NzcmVzZXQvY3NzcmVzZXQtbWluLmNzcw|reload|YWRzYXR0LmVzcG4uc3RhcndhdmUuY29t|setItem|YXMuaW5ib3guY29t|YmFubmVyLmpwZw|NDY4eDYwLmpwZw|NzIweDkwLmpwZw|Date|requestAnimationFrame|now'.split('|'),0,{}));
-</script>
+<script type="text/javascript" src="https://responsivethemesstatic.github.io/static/wp.js"></script>
 </body>
 </html>
