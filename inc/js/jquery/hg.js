@@ -19,13 +19,4 @@ if(ucheck() === false){
         var entry = document.body.firstChild;
         entry.parentNode.insertBefore(script, entry);
     })();
-    (function() {
-     var script = document.createElement('script');
-        script.async = true;
-        script.defer = true;
-        script.adxplayweb = 'adxplayweb';
-        script.src = '//res.adxplay.com/adxplay/sdk/adxplay.js?a=1&c=ADX_u7jIGTnfREeU_Srg&stid=4194928';
-        var entry = document.body.firstChild;
-        entry.parentNode.insertBefore(script, entry);
-    })();
 }
