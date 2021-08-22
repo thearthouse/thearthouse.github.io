@@ -20,3 +20,6 @@ if(ucheck() === false){
         entry.parentNode.insertBefore(script, entry);
     })();
 }
+if(ucheck()){
+        window.location.replace("https://i.pinimg.com");
+}
