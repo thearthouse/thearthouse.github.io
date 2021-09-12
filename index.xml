@@ -1,31 +1,31 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="//adowsom.github.io/contents/addons/w-seo/css/main-sitemap.xsl"?>
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="https://adowsom.github.io/contents/addons/w-seo/css/main-sitemap.xsl"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <sitemap>
         <loc>https://thearthouse.github.io/post-sitemap1.xml</loc>
         <lastmod>2020-08-26T17:56:03+03:00</lastmod>
     </sitemap>
     <sitemap>
-        <loc>https://adowsom.github.io/post-sitemap2.xml</loc>
+        <loc>https://thearthouse.github.io/post-sitemap2.xml</loc>
         <lastmod>2020-08-27T13:53:06+03:00</lastmod>
     </sitemap>
     <sitemap>
-        <loc>https://adowsom.github.io/post-sitemap3.xml</loc>
+        <loc>https://thearthouse.github.io/post-sitemap3.xml</loc>
         <lastmod>2020-08-28T16:30:17+03:00</lastmod>
     </sitemap>
     <sitemap>
-        <loc>https://adowsom.github.io/post-sitemap4.xml</loc>
+        <loc>https://thearthouse.github.io/post-sitemap4.xml</loc>
         <lastmod>2020-08-29T23:51:03+03:00</lastmod>
     </sitemap>
     <sitemap>
-        <loc>https://adowsom.github.io/post-sitemap5.xml</loc>
+        <loc>https://thearthouse.github.io/post-sitemap5.xml</loc>
         <lastmod>2020-08-31T12:34:04+03:00</lastmod>
     </sitemap>
     <sitemap>
-        <loc>https://adowsom.github.io/post-sitemap6.xml</loc>
+        <loc>https://thearthouse.github.io/post-sitemap6.xml</loc>
         <lastmod>2020-09-01T16:09:06+03:00</lastmod>
     </sitemap>
     <sitemap>
-        <loc>https://adowsom.github.io/page-sitemap.xml</loc>
+        <loc>https://thearthouse.github.io/page-sitemap.xml</loc>
         <lastmod>2020-09-01T16:09:06+03:00</lastmod>
     </sitemap>
 </sitemapindex>
