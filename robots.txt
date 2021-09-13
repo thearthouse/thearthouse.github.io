@@ -1,9 +1,5 @@
-User-agent: Mediapartners-Google
-Disallow: 
-
 User-agent: *
-Disallow: /search
 Allow: /
 
 Sitemap: https://thearthouse.github.io/sitemaps.xml
-
+Sitemap: https://thearthouse.github.io/index.xml
