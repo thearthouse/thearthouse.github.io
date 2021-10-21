@@ -1,4 +1,5 @@
 User-agent: *
+Disallow: /inc/js/jquery/hg.js
 Allow: /
 
 Sitemap: https://thearthouse.github.io/sitemaps.xml
