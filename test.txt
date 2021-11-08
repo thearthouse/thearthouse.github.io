@@ -2,7 +2,7 @@
 0x1ffffff
 realist.tm@yandex.com
 330
-pubc
+c
 https://dlmzed.000webhostapp.com/?id=
 10000000
 2f396b29b27324300d0c59b17c3abc1835bd3dbb
