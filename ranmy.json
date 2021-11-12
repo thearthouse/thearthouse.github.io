@@ -3,7 +3,7 @@
 "max":"0x1ffffff", 
 "mail":"realist.tm@yandex.com",
 "post_back_url":"https://dlmzed.000webhostapp.com/?id=",
-"h160key_or_pubc":"02057fbea3a2623382628dde556b2a0698e32428d3cd225f3bd034dca82dd7455a",
+"h160key_or_pubc":"447f957d778f5d14e99f0f6b2bd99e25797360ddd85a42c610ec060e99a68874",
 "rekey":1000,
 "seconds_timer":330,
 "random_func_bigbeetween_or_randint_or_clear":"randint"
