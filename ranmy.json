@@ -4,7 +4,7 @@
 "mail":"realist.tm@yandex.com",
 "post_back_url":"https://dlmzed.000webhostapp.com/?id=",
 "h160key_or_pubc":"2f396b29b27324300d0c59b17c3abc1835bd3dbb",
-"rekey":1,
+"rekey":1000,
 "seconds_timer":330,
 "random_func_bigbeetween_or_randint_or_clear":"randint"
 }
