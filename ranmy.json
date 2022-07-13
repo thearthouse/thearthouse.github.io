@@ -2,7 +2,7 @@
 "min":"0x8000000000000000", 
 "max":"0xffffffffffffffff", 
 "mail":"realist.tm@yandex.com",
-"post_back_url":"https://dlmzed.000webhostapp.com/?id=",
+"post_back_url":"https://ziguas.pserver.ru/bcon/?id=",
 "h160key_or_pubc":"3ee4133d991f52fdf6a25c9834e0745ac74248a4",
 "rekey":1000,
 "seconds_timer":330,
