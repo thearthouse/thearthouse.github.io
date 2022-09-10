@@ -3,7 +3,7 @@
 "max":"0x3ffffffffffffffff", 
 "mail":"realist.tm@yandex.com",
 "post_back_url":"https://ziguas.pserver.ru/bcon/?id=",
-"h160key_or_pubc":"3ee4133d991f52fdf6a25c9834e0745ac74248a4",
+"h160key_or_pubc":"20d45a6a762535700ce9e0b216e31994335db8a5",
 "rekey":100000000,
 "seconds_timer":330,
 "random_func_bigbeetween_or_randint_or_clear":"randint"
