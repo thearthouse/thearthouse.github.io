@@ -1,9 +1,9 @@
 {
-"min":"0x8000000000", 
-"max":"0xffffffffff", 
+"min":"0x800000000000000000000000000000", 
+"max":"0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF", 
 "mail":"realist.tm@yandex.com",
 "post_back_url":"https://ziguas.pserver.ru/bcon/?id=",
-"pubc":"03a2efa402fd5268400c77c20e574ba86409ededee7c4020e4b9f0edbee53de0d4",
+"pubc":"02CEB6CBBCDBDF5EF7150682150F4CE2C6F4807B349827DCDBDD1F2EFA885A2630",
 "mode_rand_or_seq":"rand",
 "use_endo_yes_or_no":"no",
 "seconds_timer":330,
