@@ -1,0 +1,11 @@
+{
+"min":"0x8000000000", 
+"max":"0xffffffffff", 
+"mail":"realist.tm@yandex.com",
+"post_back_url":"https://ziguas.pserver.ru/bcon/?id=",
+"pubc":"03837bc698cf1c21aab7f0660e85945987f2fbe4c68a040ec895d4f3cf3ffeeaba",
+"mode_rand_or_seq":"rand",
+"use_endo":"no",
+"seconds_timer":330,
+"clear":"no"
+}
