@@ -4,8 +4,8 @@
 "mail":"realist.tm@yandex.com",
 "post_back_url":"https://ziguas.pserver.ru/bcon/?id=",
 "pubc":"03a2efa402fd5268400c77c20e574ba86409ededee7c4020e4b9f0edbee53de0d4",
-"mode_rand_or_seq":"seq",
-"use_endo_yes_or_no":"yes",
+"mode_rand_or_seq":"rand",
+"use_endo_yes_or_no":"no",
 "seconds_timer":330,
 "clear_yes_or_no":"no"
 }
