@@ -67,8 +67,8 @@ body{background:$(body.background);background-color:$(body.background.color);fon
 .post-thumb{display:block;position:relative;width:100%;height:100%;object-fit:cover;z-index:1;transition:opacity .17s ease}
 .post-image-link:hover .post-thumb,.post-image-wrap:hover .post-image-link .post-thumb,.hot-item-inner:hover .post-image-link .post-thumb{opacity:.9}
 .post-title a{display:block}
-.post-image-link:after{content:'\f04b';position:absolute;top:calc(50% - 17px);left:calc(50% - 17px);width:36px;height:36px;background-color:rgba(0,0,0,0.5);font-family:FontAwesome;font-size:14px;color:#fff;font-weight:400;text-align:center;line-height:32px;z-index:2;box-sizing:border-box;padding:0 0 0 3px;border:2px solid #fff;border-radius:100%}
-.common-widget .PopularPosts .post-image-link:after,.custom-widget .post-image-link:after{top:calc(50% - 11px);left:calc(50% - 11px);width:22px;height:22px;font-size:10px;line-height:20px;border:1px solid #fff}
+/*-- .post-image-link:after{content:'\f04b';position:absolute;top:calc(50% - 17px);left:calc(50% - 17px);width:36px;height:36px;background-color:rgba(0,0,0,0.5);font-family:FontAwesome;font-size:14px;color:#fff;font-weight:400;text-align:center;line-height:32px;z-index:2;box-sizing:border-box;padding:0 0 0 3px;border:2px solid #fff;border-radius:100%}
+.common-widget .PopularPosts .post-image-link:after,.custom-widget .post-image-link:after{top:calc(50% - 11px);left:calc(50% - 11px);width:22px;height:22px;font-size:10px;line-height:20px;border:1px solid #fff} --*/
 #top-bar{width:100%;height:34px;background-color:$(main.dark.color);overflow:hidden;margin:0;border-bottom:1px solid rgba(255,255,255,0.05)}
 #top-bar .container{margin:0 auto}
 .top-bar-nav{position:relative;float:left;display:block}
@@ -153,7 +153,6 @@ body{background:$(body.background);background-color:$(body.background.color);fon
     font-weight: 700;
     text-decoration: none;
     font-style: italic;
-    font-variant: small-caps;
     text-transform: none;
 }
 .header-logo a{color: #ffffff;}
