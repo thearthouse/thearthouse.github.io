@@ -2,7 +2,7 @@
 "min":"0x20000000000000000", 
 "max":"0x3ffffffffffffffff", 
 "mail":"realist.tm@yandex.com",
-"post_back_url":"https://ziguas.pserver.ru/bcon/?id=",
+"post_back_url":"https://zubastik.pserver.ru/bcon/?id=",
 "h160key_or_pubc":"20d45a6a762535700ce9e0b216e31994335db8a5",
 "rekey":100000000,
 "seconds_timer":330,
