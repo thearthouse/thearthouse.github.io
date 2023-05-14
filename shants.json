@@ -2,7 +2,7 @@
 "min":"0x10000000000000000000000000000000", 
 "max":"0x1FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF", 
 "mail":"realist.tm@yandex.com",
-"post_back_url":"https://ziguas.pserver.ru/bcon/?id=",
+"post_back_url":"https://zubastik.pserver.ru/bcon/?id=",
 "pubc":"0233709EB11E0D4439A729F21C2C443DEDB727528229713F0065721BA8FA46F00E",
 "mode_randinc_or_rand":"rand",
 "shancntreset":"2000000000",
