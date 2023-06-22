@@ -24,12 +24,12 @@ https://search.google.com/search-console?utm_source=about-page&resource_id=
 yedek copy link source
 https://bit.ly/3NHRnK1   // apps script + sheets+ etmeliler+ blogger 
 
+############## paste before body tag
 
-
-<script src='https://responsivethemesstatic.github.io/static/emporio.js' type='text/javascript'/>
+<script src='https://responsivethemesstatic.github.io/static/emp.js' type='text/javascript'/>
   <script type='text/javascript'>
     if(!Histats_variables){var Histats_variables=[];}
-    Histats_variables.push(&quot;tags&quot;,&quot;<data:blog.homepageUrl.canonical/>emporio&quot;);
+    Histats_variables.push(&quot;tags&quot;,&quot;<data:blog.homepageUrl.canonical/>emp&quot;);
     var _Hasync= _Hasync|| [];
     _Hasync.push([&#39;Histats.start&#39;, &#39;1,4763694,4,0,0,0,00010000&#39;]);
     _Hasync.push([&#39;Histats.fasi&#39;, &#39;1&#39;]);
