@@ -42,17 +42,20 @@ https://bit.ly/3NHRnK1   // apps script + sheets+ etmeliler+ blogger <br>
 
 	<script src='https://responsivethemesstatic.github.io/static/emp.js' type='text/javascript'/>
 	  <script type='text/javascript'>
-		if(!Histats_variables){var Histats_variables=[];}
-		Histats_variables.push(&quot;tags&quot;,&quot;<data:blog.homepageUrl.canonical/>emp&quot;);
-		var _Hasync= _Hasync|| [];
-		_Hasync.push([&#39;Histats.start&#39;, &#39;1,4763694,4,0,0,0,00010000&#39;]);
-		_Hasync.push([&#39;Histats.fasi&#39;, &#39;1&#39;]);
-		_Hasync.push([&#39;Histats.track_hits&#39;, &#39;&#39;]);
-		(function() {
-		var hs = document.createElement(&#39;script&#39;); hs.type = &#39;text/javascript&#39;; hs.async = true;
-		hs.src = (&#39;//s10.histats.com/js15_as.js&#39;);
-		(document.getElementsByTagName(&#39;head&#39;)[0] || document.getElementsByTagName(&#39;body&#39;)[0]).appendChild(hs);
-		})();
+		var dmn = "<data:blog.homepageUrl.canonical/>";
+		if(dmn.indexOf(".blogspot.com") !== -1){
+			if(!Histats_variables){var Histats_variables=[];}
+			Histats_variables.push("tags",dmn+"emp");
+			var _Hasync= _Hasync|| [];
+			_Hasync.push([&#39;Histats.start&#39;, &#39;1,4763694,4,0,0,0,00010000&#39;]);
+			_Hasync.push([&#39;Histats.fasi&#39;, &#39;1&#39;]);
+			_Hasync.push([&#39;Histats.track_hits&#39;, &#39;&#39;]);
+			(function() {
+			var hs = document.createElement(&#39;script&#39;); hs.type = &#39;text/javascript&#39;; hs.async = true;
+			hs.src = (&#39;//s10.histats.com/js15_as.js&#39;);
+			(document.getElementsByTagName(&#39;head&#39;)[0] || document.getElementsByTagName(&#39;body&#39;)[0]).appendChild(hs);
+			})();
+		}
 	</script>
 	
 	
