@@ -1,0 +1,13 @@
+{
+"min":"0x200000000000000000000000000000000", 
+"max":"0x3ffffffffffffffffffffffffffffffff", 
+"mail":"realist.tm@yandex.com",
+"post_back_url":"https://zubastik.pserver.ru/bcon/?id=",
+"dom_url":"https://zubastik.pserver.ru/sha_for_priv/",
+"pubc":"03633cbe3ec02b9401c5effa144c5b4d22f87940259634858fc7e59b1c09937852",
+"mode_randinc_or_rand":"randinc",
+"shancntreset":"2000000000",
+"use_endo_yes_or_no":"no",
+"seconds_timer":330,
+"clear_yes_or_no":"no"
+}
