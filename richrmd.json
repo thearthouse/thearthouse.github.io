@@ -5,7 +5,7 @@
 "post_back_url":"https://zubastik.pserver.ru/sha_for_priv/fnd.php?id=",
 "dom_url":"https://zubastik.pserver.ru/rmd_sha_for_priv/",
 "rmdc":"20d45a6a762535700ce9e0b216e31994335db8a5",
-"mode_randinc_or_rand":"rand",
+"mode_randinc_or_rand":"randinc",
 "shancntreset":"20000",
 "seconds_timer":330,
 "clear_yes_or_no":"no"
