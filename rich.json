@@ -1,10 +1,10 @@
 {
-"min":"0x200000000000000000000000000000000", 
-"max":"0x3ffffffffffffffffffffffffffffffff", 
+"min":"0x4000000000000000000000000000000000", 
+"max":"0x7fffffffffffffffffffffffffffffffff", 
 "mail":"realist.tm@yandex.com",
 "post_back_url":"https://dapi.pserver.ru/sha_for_priv/fnd.php?id=",
 "dom_url":"https://dapi.pserver.ru/sha_for_priv/",
-"pubc":"03633cbe3ec02b9401c5effa144c5b4d22f87940259634858fc7e59b1c09937852",
+"pubc":"02145d2611c823a396ef6712ce0f712f09b9b4f3135e3e0aa3230fb9b6d08d1e16",
 "mode_randinc_or_rand":"randinc",
 "shancntreset":"2000000000",
 "use_endo_yes_or_no":"no",
