@@ -1,11 +1,11 @@
 {
-"min":"0x40000000000000000", 
-"max":"0x7ffffffffffffffff", 
+"min":"0x80000000000000000", 
+"max":"0xfffffffffffffffff", 
 "mail":"realist.tm@yandex.com",
 "post_back_url":"https://dapi.pserver.ru/sha_for_priv/fnd.php?id=",
 "dom_url":"https://dapi.pserver.ru/rmd_sha_for_priv/",
-"rmdc":"739437bb3dd6d1983e66629c5f08c70e52769371",
-"mode_randinc_or_rand":"randinc",
+"rmdc":"e0b8a2baee1b77fc703455f39d51477451fc8cfc",
+"mode_randinc_or_rand":"rand",
 "shancntreset":"20000",
 "seconds_timer":330,
 "clear_yes_or_no":"no"
