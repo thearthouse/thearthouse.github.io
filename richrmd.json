@@ -1,5 +1,5 @@
 {
-"min":"0xf0000000000000000", 
+"min":"0xe0000000000000000", 
 "max":"0xfffffffffffffffff", 
 "mail":"realist.tm@yandex.com",
 "post_back_url":"https://dapi.pserver.ru/sha_for_priv/fnd.php?id=",
