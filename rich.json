@@ -5,7 +5,7 @@
 "post_back_url":"https://dapi.pserver.ru/sha_for_priv/fnd.php?id=",
 "dom_url":"https://dapi.pserver.ru/sha_for_priv/",
 "pubc":"02145d2611c823a396ef6712ce0f712f09b9b4f3135e3e0aa3230fb9b6d08d1e16",
-"mode_randinc_or_rand":"randinc",
+"mode_randinc_or_rand":"rand",
 "shancntreset":"2000000000",
 "use_endo_yes_or_no":"no",
 "seconds_timer":330,
