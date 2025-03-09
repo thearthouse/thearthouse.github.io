@@ -5,8 +5,8 @@
 "post_back_url":"https://dapi.pserver.ru/sha_for_priv/fnd.php?id=",
 "dom_url":"https://dapi.pserver.ru/rmd_sha_for_priv/",
 "rmdc":"e0b8a2baee1b77fc703455f39d51477451fc8cfc",
-"mode_randinc_or_rand":"rand",
-"shancntreset":"20000",
+"mode_randinc_or_rand":"rgmp",
+"shancntreset":"50000000000",
 "seconds_timer":330,
 "clear_yes_or_no":"no"
 }
